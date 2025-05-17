@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drivers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" ></script>
+    
+<link rel="stylesheet" href="css/drivers.css    ">
+
+</head>
+
+<body>
+    <!-- Header and navbar section -->
+    <header class="navbar  sticky-top  flex-md-nowrap p-0 shadow">
+        
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+      </header>
+      
+      
+    
+
+      <div class="container-fluid">
+        <div class="row">
+          <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+            <div class="position-sticky pt-3">
+              <ul class="nav flex-column">
+              
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html">
+                    <img src="img/Figr_Icon_window.png" alt="">
+                    
+                    Dashboard
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="python.html">
+                    <span data-feather="shopping-cart"></span>
+                    <img src="img/shipments.png" alt="">
+                    Shipments
+                    
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="users"></span>
+                    Drivers
+                    
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="deployment.html">
+                    <span data-feather="bar-chart-2"></span>
+                    Deployment on Render
+                    
+                    
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="layers"></span>
+                    Invoicing
+                  </a>
+                </li>
+              </ul>
+      
+              
+              <ul class="nav flex-column mb-2">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="file-text"></span>
+                    Communication
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="file-text"></span>
+                        Alerts
+                </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="file-text"></span>
+                    Reports
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="file-text"></span>
+                    User Managements
+                  </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <span data-feather="file-text"></span>
+                      Settings
+                    </a>
+                  </li>
+                  
+              </ul>
+            </div>
+          </nav>
+      </div>
+    </div>
+<!-- Ends Here -->
+
+
+
+
+<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+
+    <!-- Input, logo, and user container -->
+    <div class="container mt-2 d-flex justify-content-between align-items-center">
+      <div class="input-group" style="max-width: 500px;">
+        <span class="input-group-text bg-white border-end-0 p-1">
+          <i class="bi bi-search" style="font-size: 14px;"></i>
+        </span>
+
+        <input type="text" class="form-control border-start-0 p-1" placeholder="Search..." style="font-size: 14px; height: 40px;" />
+
+      </div>
+  
+      <div class="d-flex align-items-center">
+        <span class="me-3">Admin User</span>
+        <img src="img/icon1.png" alt="Image 1" style="height: 30px; width: 30px;" class="me-2">
+        <img src="img/icon2.png" alt="Image 2" style="height: 30px; width: 30px;">
+      </div>
+    </div>
+  
+    <div class="container mt-4 my-5" id="shipment">
+      <div class="d-flex justify-content-between align-items-center">
+        <h4 class="mb-0">Driver Management</h4>
+        <button class="btn btn-success btn-sm d-block d-md-inline">
+          <i class="bi bi-plus me-2"></i>
+          Create Shipment
+        </button>
+      </div>
+    </div>
+
+  <!-- Top Bar Without Card or Border -->
+<div class="d-flex flex-column flex-sm-row justify-content-between align-items-center mb-3 px-2">
+    <div class="input-group" style="max-width: 500px; width: 100%;">
+      <span class="input-group-text bg-white border-end-0 p-1">
+        <i class="bi bi-search" style="font-size: 14px;"></i>
+      </span>
+      <input type="text" class="form-control border-start-0 p-1" placeholder="Search..." style="font-size: 14px; height: 40px;" />
+    </div>
+  
+    <!-- Action Buttons (Right) -->
+    <div class="d-flex gap-2 mt-2 mt-sm-0">
+      <button class="btn btn-outline-secondary btn-sm">Filter</button>
+      <button class="btn btn-outline-primary btn-sm">Map View</button>
+      <button class="btn btn-outline-dark btn-sm">List View</button>
+    </div>
+  </div>
+  
+      
+    <!-- Driver Cards Section -->
+    <div class="container my-5">
+      <div class="row g-4">
+  
+        <!-- Driver Card (repeat this block for more drivers) -->
+        <div class="col-md-4">
+          <div class="card shadow border-0">
+            <!-- Top (white) -->
+            <div class="bg-white d-flex align-items-center justify-content-center gap-3 py-4">
+                <img src="img/Snapchat-2039894901.jpg" alt="Driver" class="rounded-circle" style="width: 80px; height: 80px;">
+                <h6 class="mb-0 align-self-center">John Doe</h6>
+              </div>
+
+                            
+            <!-- Bottom (cream) -->
+            <div class="p-3" style="background-color: #fafaf9;">
+              <div class="d-flex justify-content-between mb-2">
+                <div><strong>Route:</strong></div>
+                <div>Lagos</div>
+              </div>
+              <div class="d-flex justify-content-between mb-2">
+                <div><strong>Route:</strong></div>
+                <div>Lagos</div>
+              </div>
+              <div class="d-flex justify-content-end gap-2">
+                <button class="btn btn-white btn-sm border">Details</button>
+
+                <button class="btn btn-success btn-sm">Assign Task</button>
+                
+              </div>
+
+              
+            </div>
+          </div>
+        </div>
+  
+        <!-- Repeat card for another driver -->
+        <div class="col-md-4">
+          <div class="card shadow border-0">
+            <div class="bg-white d-flex align-items-center justify-content-center gap-3 py-4">
+                <img src="img/Snapchat-2039894901.jpg" alt="Driver" class="rounded-circle" style="width: 80px; height: 80px;">
+                <h6 class="mb-0 align-self-center">John Doe</h6>
+              </div>
+              
+            <div class="p-3" style="background-color:  #fafaf9;">
+              <div class="d-flex justify-content-between mb-2">
+                <div><strong>Route:</strong></div>
+                <div>Lagos</div>
+              </div>
+              <div class="d-flex justify-content-between mb-2">
+                <div><strong>Route:</strong></div>
+                <div>Lagos</div>
+              </div>
+              <div class="d-flex justify-content-end gap-2">
+                <button class="btn btn-white btn-sm border">Details</button>
+
+                <button class="btn btn-success btn-sm">Assign Task</button>
+
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow border-0">
+              <div class="bg-white d-flex align-items-center justify-content-center gap-3 py-4">
+                  <img src="img/Snapchat-2039894901.jpg" alt="Driver" class="rounded-circle" style="width: 80px; height: 80px;">
+                  <h6 class="mb-0 align-self-center">John Doe</h6>
+                </div>
+                
+              <div class="p-3" style="background-color:  #fafaf9;">
+                <div class="d-flex justify-content-between mb-2">
+                  <div><strong>Route:</strong></div>
+                  <div>Lagos</div>
+                </div>
+                <div class="d-flex justify-content-between mb-2">
+                  <div><strong>Route:</strong></div>
+                  <div>Lagos</div>
+                </div>
+                <div class="d-flex justify-content-end gap-2">
+                  <button class="btn btn-white btn-sm border">Details</button>
+  
+                  <button class="btn btn-success btn-sm">Assign Task</button>
+  
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          
+  
+        <!-- Add more driver cards as needed -->
+        
+      </div>
+    </div>
+  
+  </main>
+  
+<!-- End Section -->
+
+<!-- Js linking -->
+<script src="js/index.js"></script>
+<!-- Ends Here -->
+</body>
+</html>

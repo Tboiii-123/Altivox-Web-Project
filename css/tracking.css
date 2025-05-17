@@ -1,0 +1,204 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #cce4cc !important; 
+}
+
+.navbar-nav {
+    display: flex;
+    flex-wrap: nowrap; /* Prevents wrapping */
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+nav{
+    background-color: white;
+}
+#logo{
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 2%;
+}
+
+
+
+ul{
+    margin-left: 20%;
+    display: flex;
+    flex-wrap: nowrap; 
+    
+}
+ul li{
+    font-size: 22px;
+}
+
+
+
+
+
+@media(max-width:1000px){
+    nav div ul li button{
+        width: 100%;
+        
+    
+    }
+
+    ul{
+        margin-left: 0%;
+        
+    }
+    ul li{
+        
+        padding-left: 0%;
+    }
+    
+}
+
+
+
+/* Sectionn2 */
+
+.section1{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.section1 aside{
+    display: flex;
+    justify-content:space-around;
+}
+
+.section1 form{
+
+    border: 1px solid black;
+    padding: 30px;
+    height: 700px;
+    width: 100%;
+    
+}
+
+
+
+.section1 form table tr td{
+    padding-left: 25px;
+    padding-bottom: 25px;
+
+    
+}
+
+#button{
+    margin-top: 10px;
+    border-radius: 20px;
+    font-size: 13px;
+    color: rgb(110, 73, 4);
+}
+.section1 aside div #map{
+    width: 80%;
+    height: 800px;
+}
+
+.section1 aside div form input{
+    border-radius: 20px;
+    padding: 10px;
+    width: 80%;
+}
+
+
+@media(max-width:600px){
+    .section1 aside{
+        display: block;
+    }
+    .section1 form{
+
+        border: 1px solid black;
+        padding: 30px;
+        height: 900px;
+        width: 100%;
+        
+    }
+    .section1 aside div #map{
+        width: 100%;
+        height: 800px;
+    }
+    .section1 aside div form input{
+        border-radius: 20px;
+        padding: 10px;
+        width: 70%;
+        margin-bottom: 30px;
+    }
+
+    
+       
+}
+/* Ends Here */
+
+
+
+/* Footer */
+#footer {
+    background-color: #354f52;
+    color: white;
+    padding: 40px 10%;
+}
+
+/* Common styling for headings */
+.footer-heading {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+}
+
+/* Common styling for lists */
+.footer-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer-list .nav-item {
+    padding: 5px 0;
+}
+
+/* Footer links */
+#footer .nav-link {
+    text-decoration: none;
+    color: white;
+}
+
+/* Align social media icons */
+#footer #image img {
+    padding: 0 10px;
+    height: 30px;
+}
+
+#footer .d-flex a {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+/* Left-align copyright text */
+.copyright-text {
+    text-align: left;
+    margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    #footer {
+        padding: 30px 5%;
+    }
+
+    #footer #image img {
+        padding: 5px;
+    }
+
+    .copyright-text {
+        text-align: left; /* Ensuring it remains left-aligned on mobile */
+    }
+}

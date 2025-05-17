@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #cce4cc !important; 
+}
+
+.navbar-nav {
+    display: flex;
+    flex-wrap: nowrap; /* Prevents wrapping */
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+nav{
+    background-color: white;
+}
+#logo{
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 2%;
+}
+
+
+
+ul{
+    margin-left: 20%;
+    display: flex;
+    flex-wrap: nowrap; 
+    
+}
+ul li{
+    font-size: 22px;
+}
+
+
+
+
+@media(max-width:1000px){
+    nav div ul li button{
+        width: 100%;
+        
+    
+    }
+
+    ul{
+        margin-left: 0%;
+        
+    }
+    ul li{
+        
+        padding-left: 0%;
+    }
+    
+}
+
+
+
+
+/* Section1 */
+
+.section1{
+    
+    background-image: url('/img/male\ worker\ \(1\).png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 750px;
+}
+
+.section1 div{
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 20%;
+    
+    color: white;
+    opacity: 1;
+    
+}
+
+
+.section1 div h1{
+    font-size: 50px;
+}
+
+.section1 div  p{
+    font-size: 30px;
+    text-align: center;
+    width: 90%;
+}
+
+@media(max-width:600px){
+    .section1 div{
+        position: absolute;
+        text-align: center;
+        top: 40%;
+        left: 20%;
+        
+        color: white;
+        opacity: 1;
+        
+    }
+    .section1 div h1{
+        font-size: 30px;
+    }
+    .section1 div  p{
+        font-size: 20px;
+    }
+    
+    
+}
+
+/* Ends Here */
+
+
+
+
+
+/* Section2 */
+
+.section2{
+    margin-top: 100px;
+    
+}
+
+.section2 center aside{
+    display: flex;
+    justify-content: space-around;
+}
+
+.section2 center aside #form{
+    background-color: white;
+    padding: 50px;
+    
+    border-radius: 5%;
+    height: 750px;
+    width: 40%;
+
+}
+
+
+
+
+
+.section2 center aside #form form {
+    border: 1px solid black;
+    
+    
+    padding: 50px;
+    background-color:rgb(255, 253, 253);
+    width: 100%;
+}
+
+
+.section2 center aside #form form textarea {
+    width: 100%;
+}
+.section2 center aside #second {
+    background-color: white;
+    padding: 50px;
+    
+    border-radius: 5%;
+    height: 650px;
+    width: 25%;
+
+
+}
+
+.section2 center aside #second div #image img {
+    padding-left: 20px;
+
+}
+
+.section2 center aside #second div  #social{
+    margin-top: 100px;
+}
+
+@media(max-width:1000px){
+    .section2 center aside #form{
+        background-color: white;
+        padding: 50px;
+        
+        border-radius: 5%;
+        height: 650px;
+        width: 50%;
+    
+    }
+    
+    .section2 center aside #second {
+        background-color: white;
+        padding: 50px;
+        
+        border-radius: 5%;
+        height: 650px;
+        width: 35%;
+    
+    
+    }
+    
+}
+
+@media(max-width:800px){
+
+    .section2 center aside{
+        display: block;
+        margin: 5%;
+        
+    }
+    
+    .section2 center aside #form{
+        background-color: white;
+        padding: 10px;
+        
+        border-radius: 5%;
+        height: 650px;
+        width: 100%;
+    
+    }
+
+    .section2 center aside #form form {
+        border: none;
+        
+        
+        padding: 10px;
+        background-color:rgb(255, 253, 253);
+        width: 100%;
+    }
+
+    .section2 center aside #second {
+        
+        display: none;
+    
+    
+    }
+    
+}
+
+
+/* Ends Here */
+
+
+
+
+
+
+
+/* Section3 */
+
+.section3{
+    margin-top: 100px;
+}
+.section3 aside{
+
+    background-color: white;
+    padding: 30px;
+    border-radius: 200px;
+    margin: 10%;
+    
+    
+}
+
+.section3 aside{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section3 aside img{
+    width: 100%;
+    height: 300px;
+    
+
+}
+.section3 aside #text{
+        margin-top: 100px;
+}
+.section3 aside #text h1{
+    font-size: 30px;
+}
+.section3 aside #text center {
+    margin-top: 50px;
+}
+
+
+@media(max-width:600px){
+    .section3 aside{
+        display: block;
+    }
+    .section3 aside{
+
+        background-color:  #cce4cc;
+        padding: 0px;
+        border-radius: 200px;
+        margin: 10%;
+        
+        
+    }
+    
+}
+
+
+/* Footer */
+#footer {
+    background-color: #354f52;
+    color: white;
+    padding: 40px 10%;
+}
+
+/* Common styling for headings */
+.footer-heading {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+}
+
+/* Common styling for lists */
+.footer-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer-list .nav-item {
+    padding: 5px 0;
+}
+
+/* Footer links */
+#footer .nav-link {
+    text-decoration: none;
+    color: white;
+}
+
+/* Align social media icons */
+#footer #image img {
+    padding: 0 10px;
+    height: 30px;
+}
+
+#footer .d-flex a {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+/* Left-align copyright text */
+.copyright-text {
+    text-align: left;
+    margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    #footer {
+        padding: 30px 5%;
+    }
+
+    #footer #image img {
+        padding: 5px;
+    }
+
+    .copyright-text {
+        text-align: left; /* Ensuring it remains left-aligned on mobile */
+    }
+}

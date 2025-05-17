@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #cce4cc !important; 
+}
+
+.navbar-nav {
+    display: flex;
+    flex-wrap: nowrap; /* Prevents wrapping */
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+nav{
+    background-color: white;
+}
+#logo{
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 2%;
+}
+
+
+
+ul{
+    margin-left: 20%;
+    display: flex;
+    flex-wrap: nowrap; 
+    
+}
+ul li{
+    font-size: 22px;
+}
+
+
+
+
+
+
+@media(max-width:1000px){
+    nav div ul li button{
+        width: 100%;
+        
+    
+    }
+
+    ul{
+        margin-left: 0%;
+        
+    }
+    ul li{
+        
+        padding-left: 0%;
+    }
+    
+}
+
+
+
+
+/* Section1 */
+
+.section1{
+    
+    background-image: url('/img/Pensive.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 750px;
+}
+
+
+.section1 div{
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 25%;
+    
+    color: white;
+    width: 50%;
+
+    
+    
+}
+
+
+.section1 div h1{
+    font-size: 50px;
+}
+
+.section1 div  p{
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+@media(max-width:600px){
+    .section1{
+    
+        
+        height: 500px;
+    }
+    
+    .section1 div{
+        position: absolute;
+        text-align: center;
+        top: 40%;
+        left: 10%;
+        
+        color: white;
+        width: 90%;
+    
+        
+    }
+    .section1 div h1{
+        font-size: 30px;
+    }
+    .section1 div  p{
+        font-size: 20px;
+    }
+    
+    
+}
+
+
+
+/* Ends Here */
+
+
+/* Section2 */
+.section2{
+    margin-top: 100px;
+    padding-left: 30px;
+    
+    
+}
+.section2 aside{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+
+.section2 aside #text div{
+    margin-bottom: 30px;
+}
+.section2 aside #text  h1{
+color: rgb(61, 61, 98);
+}
+.section2 aside #text div  p{
+    width: 90%;
+}
+
+.section2 aside #text ul {
+    width: 100%;
+    display: block;
+margin-left: 0px;
+
+}
+
+@media(max-width:1000px){
+
+    .section2 aside{
+        
+        
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .section2 aside #text div  p{
+        width: 90%;
+        
+    }
+    
+}
+
+@media(max-width:700px){
+    .section2 aside #text div  p{
+        width: 90%;
+        
+    }
+
+    .section2 aside{
+        display: block;
+        
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    
+    .section2 aside div img{
+        width: 100%;
+    
+    }
+    
+    
+}
+
+/* Ends Here */
+
+/* Section3 */
+
+.section3{
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.section3 aside {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.section3 aside div{
+    padding-left: 30px;
+}
+
+@media(max-width:600px){
+    .section3 aside {
+display: block;
+width: 100%;
+    }
+       
+}
+/* Ends Here */
+
+/* Section4 */
+
+
+.section4{
+    padding-top: 50px;
+    margin-top: 100px;
+    background-color: white;
+    padding-bottom: 100px;
+    
+}
+.section4 h1{
+    text-align:  center;
+    margin-bottom: 50px;
+}
+
+
+/* Ends Here */
+
+/* Space */
+
+.space{
+    
+    padding-bottom: 150px;
+}
+
+/* Ends Here */
+
+/* Section5 */
+.section5{
+    
+    background-color: white;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    text-align: center;
+    
+    
+}
+.section5 h1{
+margin-bottom: 30px;
+}
+
+/* Ends Here */
+
+
+
+
+/* Footer */
+#footer {
+    background-color: #354f52;
+    color: white;
+    padding: 40px 10%;
+}
+
+/* Common styling for headings */
+.footer-heading {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+}
+
+/* Common styling for lists */
+.footer-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer-list .nav-item {
+    padding: 5px 0;
+}
+
+/* Footer links */
+#footer .nav-link {
+    text-decoration: none;
+    color: white;
+}
+
+/* Align social media icons */
+#footer #image img {
+    padding: 0 10px;
+    height: 30px;
+}
+
+#footer .d-flex a {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+/* Left-align copyright text */
+.copyright-text {
+    text-align: left;
+    margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    #footer {
+        padding: 30px 5%;
+    }
+
+    #footer #image img {
+        padding: 5px;
+    }
+
+    .copyright-text {
+        text-align: left; /* Ensuring it remains left-aligned on mobile */
+    }
+}

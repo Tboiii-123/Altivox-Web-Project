@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drivers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" ></script>
+    
+<link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body>
+    <!-- Header and navbar section -->
+    <header class="navbar  sticky-top  flex-md-nowrap p-0 shadow">
+        
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+      </header>
+      
+      
+    
+
+      <div class="container-fluid">
+        <div class="row">
+          <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+            <div class="position-sticky pt-3">
+              <ul class="nav flex-column">
+              
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html">
+                    <img src="img/Figr_Icon_window.png" alt="">
+                    
+                    Dashboard
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="python.html">
+                    <span data-feather="shopping-cart"></span>
+                    <img src="img/shipments.png" alt="">
+                    Shipments
+                    
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="users"></span>
+                    Drivers
+                    
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="deployment.html">
+                    <span data-feather="bar-chart-2"></span>
+                    Deployment on Render
+                    
+                    
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="layers"></span>
+                    Invoicing
+                  </a>
+                </li>
+              </ul>
+      
+              
+              <ul class="nav flex-column mb-2">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="file-text"></span>
+                    Communication
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="file-text"></span>
+                        Alerts
+                </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="file-text"></span>
+                    Reports
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span data-feather="file-text"></span>
+                    User Managements
+                  </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <span data-feather="file-text"></span>
+                      Settings
+                    </a>
+                  </li>
+                  
+              </ul>
+            </div>
+          </nav>
+      </div>
+    </div>
+<!-- Ends Here -->
+
+
+<!-- Section1 -->
+
+<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+
+<!-- Input, logo, and user container -->
+<div class="container mt-2 d-flex justify-content-between align-items-center">
+    <!-- Search Input and Button (smaller) -->
+    <div class="input-group" style="max-width: 500px;">
+      <span class="input-group-text bg-white border-end-0 p-1">
+        <i class="bi bi-search" style="font-size: 14px;"></i>
+      </span>
+      <input type="text" class="form-control border-start-0 p-1" placeholder="Search..." style="font-size: 14px; height: 40px;" />
+    </div>
+  
+    <!-- Admin User and two images container -->
+    <div class="d-flex align-items-center">
+      <span class="me-3">Admin User</span>
+      <!-- First Image -->
+      <img src="img/icon1.png" alt="Image 1" style="height: 30px; width: 30px;" class="me-2">
+      <!-- Second Image -->
+      <img src="img/icon2.png" alt="Image 2" style="height: 30px; width: 30px;">
+    </div>
+  </div>
+            
+      <div class="container mt-4 my-5 " id="shipment">
+        <div class="d-flex justify-content-between align-items-center">
+          <h4 class="mb-0">Driver Management</h4>
+          <button class="btn btn-success btn-sm d-block d-md-inline">
+            <i class="bi bi-plus me-2"></i>
+            Create Shipment
+          </button>
+                    
+        </div>
+      </div>
+      
+        <div class="card border rounded p-3">
+            <!-- Header Section -->
+            <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap">
+                <h5 class="mb-2">Shipment</h5>
+                <div class="d-flex gap-2">
+                  <!-- Search Input -->
+                  <input type="text" class="form-control" placeholder="Search..." />
+            
+                  <!-- Filter Select beside the search input -->
+                  <select class="form-select" style="width: 120px;">
+                    <option selected>Filter</option>
+                    <option value="1">Delivered</option>
+                    <option value="2">Pending</option>
+                    <option value="3">Cancelled</option>
+                  </select>
+                </div>
+              </div>
+
+      
+           <!-- Table View (desktop and tablet) -->
+    <div class="table-responsive d-none d-md-block">
+        <table class="table table-bordered table-hover align-middle">
+          <thead class="table-light">
+            <tr>
+              <th scope="col"><input type="checkbox" /></th>
+              <th scope="col">ID</th>
+              <th scope="col">Customer</th>
+              <th scope="col">Route</th>
+              <th scope="col">Driver</th>
+              <th scope="col">Status</th>
+              <th scope="col">Pickup Time</th>
+              <th scope="col">Delivery Time</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td>#001</td>
+              <td>John Doe</td>
+              <td>Lagos - Abuja</td>
+              <td>Ahmed Musa</td>
+              <td><span class="badge bg-success">Delivered</span></td>
+              <td>9:00 AM</td>
+              <td>2:00 PM</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td>#001</td>
+              <td>John Doe</td>
+              <td>Lagos - Abuja</td>
+              <td>Ahmed Musa</td>
+              <td><span class="badge bg-success">Delivered</span></td>
+              <td>9:00 AM</td>
+              <td>2:00 PM</td>
+            </tr>
+          </tbody>
+          
+        </table>
+      </div>
+  
+      <!-- Flexbox Card View (mobile only) -->
+      <div class="d-block d-md-none">
+        <div class="border p-3 mb-3 rounded shadow-sm">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <input type="checkbox" />
+            <strong>#001</strong>
+          </div>
+          <div><strong>Customer:</strong> John Doe</div>
+          <div><strong>Route:</strong> Lagos - Abuja</div>
+          <div><strong>Driver:</strong> Ahmed Musa</div>
+          <div><strong>Status:</strong> <span class="badge bg-success">Delivered</span></div>
+          <div><strong>Pickup Time:</strong> 9:00 AM</div>
+          <div><strong>Delivery Time:</strong> 2:00 PM</div>
+        </div>
+        </div>
+
+      
+      <!-- Flexbox Card View (mobile only) -->
+      <div class="d-block d-md-none">
+        <div class="border p-3 mb-3 rounded shadow-sm">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <input type="checkbox" />
+            <strong>#001</strong>
+          </div>
+          <div><strong>Customer:</strong> John Doe</div>
+          <div><strong>Route:</strong> Lagos - Abuja</div>
+          <div><strong>Driver:</strong> Ahmed Musa</div>
+          <div><strong>Status:</strong> <span class="badge bg-success">Delivered</span></div>
+          <div><strong>Pickup Time:</strong> 9:00 AM</div>
+          <div><strong>Delivery Time:</strong> 2:00 PM</div>
+        </div>
+        </div>
+        
+      
+
+</main>
+
+<!-- End Section -->
+
+<!-- Js linking -->
+<script src="js/index.js"></script>
+<!-- Ends Here -->
+</body>
+</html>
