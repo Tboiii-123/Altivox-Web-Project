@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashbaord</title>
+    <title>Drivers</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     
 
@@ -13,7 +13,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" ></script>
     
-<link rel="stylesheet" href="css/dashbaord.css">
+<link rel="stylesheet" href="css/alertauto.css">
 
 </head>
 
@@ -141,17 +141,13 @@
   <div class="container mt-4 my-5" id="shipment my-5">
     <div class="d-flex justify-content-between align-items-center">
       <!-- Heading on the left -->
-      <div>
-        <h5 class="mb-1">Dashboard</h5>
-        <p class="mb-0">View all recent automation events and log</p>
-      </div>
-      
+      <h4 class="mb-0">Automation & Alerts</h4>
   
       <!-- Buttons on the right -->
       <div class="d-flex gap-2">
         
         <button class="btn btn-white btn-sm d-block d-md-inline border">         
-          Assign Driver
+          View Logs
         </button>
         <button class="btn btn-success btn-sm d-block d-md-inline">
             <i class="bi bi-plus me-2"></i>
@@ -162,187 +158,101 @@
     </div>
   </div>
     
-  <!-- shipment Summary -->
-  <div class="container my-4">
-    <div class="row g-3">
-      <!-- Card 1 -->
-      <div class="col-12 col-md-4">
-        <div class="card shadow-sm p-3 h-100">
-          <h5 class="card-title mb-3">Shipment Summary</h5>
-          <div class="d-flex justify-content-between text-center">
-            <div>
-              <div class="fw-bold">Pickup</div>
-              <div class="text-muted" id="text">120</div>
-            </div>
-            <div>
-              <div class="fw-bold">In Transit</div>
-              <div class="text-muted" id="text">244</div>
-            </div>
-          </div>
-          
-          
-          <div class="d-flex justify-content-between text-center">
-            <div>
-              <div class="fw-bold">Delivered</div>
-              <div class="text-muted" id="text">300</div>
-            </div>
-            <div>
-              <div class="fw-bold">Delayed</div>
-              <div class="text-danger " id="text">15</div>
-            </div>
-          </div>
-          
-        </div>
+      <!-- Inline Text Navigation Above Table -->
+      <div class="d-flex justify-content-start gap-4 mb-3 px-2">
+        <a href="#" class="text-decoration-none text-dark" id="navigation">Customer Alert Builder</a>
+        <a href="#" class="text-decoration-none text-dark" id="navigation">Workflow Engine</a>
+        <a href="#" class="text-decoration-none text-dark" id="navigation">Recent Activity</a>
       </div>
-  
-      <!-- Card 2 -->
-      <div class="col-12 col-md-4">
-        <div class="card shadow-sm p-3 h-100">
-          <h5 class="card-title mb-3">Driver Staus Summary</h5>
-          <div class="d-flex justify-content-between text-center">
-            <div>
-              <div class="fw-bold">Activite Drivers</div>
-              <div class="text-muted" id="text">35</div>
-            </div>
-            <div>
-              <div class="fw-bold">Idel Drivers</div>
-              <div class="text-muted" id="text">10</div>
-            </div>
-          </div>
-          
-       
-        </div>
-      </div>
-  
-  
-      <!-- Card 3 -->
-      <div class="col-12 col-md-4">
-        <div class="card shadow-sm p-3 h-100">
-          <h5 class="card-title mb-3">Revenue Summary</h5>
-          <div class="d-flex justify-content-between text-center">
-            <div>
-              <div class="fw-bold">Total Revenue</div>
-              <div class="text-muted" id="text">#42,500,00</div>
-            </div>
-            <div>
-              <div class="fw-bold">Outstanding Invvoices</div>
-              <div class="text-danger" id="text">#5,400,00</div>
-            </div>
-          </div>
-          
-        
-          
-        </div>
-      </div>
-  
-    </div>
-  </div>
-  
-
-  
+      
 
 
-  <div class="container my-4">
-    <div class="row g-3">
-      <!-- Left Column: Table Card -->
-      <div class="col-12 col-md-8">
         <div class="card border rounded p-3">
-          <!-- Header Section -->
-          <div class="d-flex justify-content-between align-items-center flex-wrap mb-5">
-            <div>
-              <h5 class="mb-1">Recent Shipments</h5>
-            </div>
-            <div class="d-flex align-items-center gap-2 mt-2 mt-md-0">
+            <!-- Header Section -->
+            <div class="d-flex justify-content-between align-items-center flex-wrap mb-5 ">
+                <div>
+                  <h5 class="mb-1">Recent Automation Activity</h5>
+                  <p class="mb-0">View all recent automation events and log</p>
+                </div>
               
-              <button class="btn btn-white btn-sm d-flex align-items-center border" style="height: 40px;">
-                
-                <span>View All ></span>
-              </button>
-            </div>
-          </div>
-  
-          <!-- Table -->
-          <div class="table-responsive d-none d-md-block">
-            <table class="table table-bordered table-hover align-middle">
-              <thead class="table-light">
-                <tr>
-                  <th scope="col">ID</th>
-                  <th scope="col">Customer</th>
-                  <th scope="col">Route</th>
-                  <th scope="col">Driver</th>
-                  <th scope="col">Status</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>ST-8742</td>
-                  <td>incline Corp</td>
-                  
-                  <td>Lagos-Ibadan</td>
-                  <td>John Doe</td>
-                  <td><span class="badge bg-danger">Delayed</span></td>
-                  
-                </tr>
-                <tr>
-                    <td>ST-8742</td>
-                    <td>incline Corp</td>
-                    
-                    <td>Lagos-Ibadan</td>
-                    <td>John Doe</td>
-                    <td><span class="badge bg-warning">Transit</span></td>
-                    
-                </tr>
-                <tr>
-                    <td>ST-8742</td>
-                    <td>incline Corp</td>
-                    
-                    <td>Lagos-Ibadan</td>
-                    <td>John Doe</td>
-                    <td><span class="badge bg-success">Delivered</span></td>
-                    
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
+                <div class="d-flex align-items-center gap-2 mt-2 mt-md-0">
+                  <input type="text" class="form-control" placeholder="Search..." style="width: 250px; height: 40px;" />
+                  <button class="btn btn-white btn-sm d-flex align-items-center border" style="height: 40px;">
+                    <i class="bi bi-download me-1"></i>
+                    <span>Export</span>
+                  </button>
+                </div>
+              </div>
+                                          
+
+      
+           <!-- Table View (desktop and tablet) -->
+    <div class="table-responsive d-none d-md-block">
+        <table class="table table-bordered table-hover align-middle">
+          <thead class="table-light">
+            <tr>
+            
+              <th scope="col">Automation</th>
+              <th scope="col">Event</th>
+              <th scope="col">Time</th>
+              <th scope="col">Status</th>
+              <th scope="col">Actions</th>
+              
+            </tr>
+          </thead>
+         <tbody>
+            <tr>
+              
+              <td>Auto-Assign Driver</td>
+              <td>Driver Adebayo assigned to delivered #LG-2354</td>
+              <td>Today,10:23 AM</td>
+              
+              <td><span class="badge bg-danger">Failed</span></td>
+              <td>View</td>
+              
+              
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              
+              <td>Customer Update</td>
+              <td>SMS sent to customer about delivery #LG-2350 delay</td>
+              <td>Lagos - Abuja</td>
+              <td><span class="badge bg-success">success</span></td>
+              
+              <td>View</td>
+              
+              
+            </tr>
+          </tbody>
+
+          <tbody>
+            <tr>
+              
+              <td>Fuel Warning</td>
+              <td>John Doe</td>
+              <td>Lagos - Abuja</td>
+              <td><span class="badge bg-success">Delivered</span></td>
+              
+              <td>View</td>
+              
+              
+            </tr>
+          </tbody>
+          
+          
+        </table>
       </div>
   
-      <!-- Right Column: Vertical Card with 3 Items -->
-      <div class="col-12 col-md-4">
-        <div class="card shadow-sm border rounded p-3 h-100">
-          <div class="mb-3">
-            <strong>Recent Alert</strong>
-          </div>
-  
-          <!-- Item 1 -->
-          <div class="border p-2 rounded mb-2">
-            <div class="fw-bold">Shipmnet #ST-8742 is delayed</div>
-            <div class="text-muted">Expected delivery time is now 2 hours later than scheduleed</div>
-          </div>
-  
-          <!-- Item 2 -->
-          <div class="border p-2 rounded mb-2">
-            <div class="fw-bold">Driver John D. reported vehicle issue</div>
-            <div class="text-muted">Maintainance team has been notofied</div>
-          </div>
-  
-          <!-- Item 3 -->
-          <div class="border p-2 rounded">
-            <div class="fw-bold">New customer onboard</div>
-            <div class="text-muted">Incline Corp ha been successfully added to the system</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Mobile Card View -->
+
+      <!-- Mobile Card View -->
 <div class="d-block d-md-none">
     <div class="border p-3 mb-3 rounded shadow-sm">
-      <div class="mb-2"><strong>Shipment ID:</strong> ST-8742</div>
-      <div class="mb-2"><strong>Company:</strong> Incline Corp</div>
-      <div class="mb-2"><strong>Route:</strong> Lagos-Ibadan</div>
-      <div class="mb-2"><strong>Driver:</strong> John Doe</div>
-      <div class="mb-2"><strong>Status:</strong> <span class="badge bg-success">Delivered</span></div>
+      <div class="mb-2"><strong>Title:</strong> Auto-Assign Driver</div>
+      <div class="mb-2"><strong>Message:</strong> Driver Adebayo assigned to delivered #LG-2354</div>
+      <div class="mb-2"><strong>Time:</strong> Today, 10:23 AM</div>
+      <div class="mb-2"><strong>Status:</strong> <span class="badge bg-danger">Failed</span></div>
       <div class="text-end">
         <button class="btn btn-outline-primary btn-sm">View</button>
       </div>
@@ -352,11 +262,10 @@
 <!-- Mobile Card View -->
 <div class="d-block d-md-none">
     <div class="border p-3 mb-3 rounded shadow-sm">
-      <div class="mb-2"><strong>Shipment ID:</strong> ST-8742</div>
-      <div class="mb-2"><strong>Company:</strong> Incline Corp</div>
-      <div class="mb-2"><strong>Route:</strong> Lagos-Ibadan</div>
-      <div class="mb-2"><strong>Driver:</strong> John Doe</div>
-      <div class="mb-2"><strong>Status:</strong> <span class="badge bg-success">Delivered</span></div>
+      <div class="mb-2"><strong>Title:</strong> Customer Update</div>
+      <div class="mb-2"><strong>Message:</strong> SMS sent to customer about delivery #LG-2350 delay</div>
+      <div class="mb-2"><strong>Route:</strong> Lagos - Abuja</div>
+      <div class="mb-2"><strong>Status:</strong> <span class="badge bg-success">Success</span></div>
       <div class="text-end">
         <button class="btn btn-outline-primary btn-sm">View</button>
       </div>
@@ -366,17 +275,16 @@
   <!-- Mobile Card View -->
 <div class="d-block d-md-none">
     <div class="border p-3 mb-3 rounded shadow-sm">
-      <div class="mb-2"><strong>Shipment ID:</strong> ST-8742</div>
-      <div class="mb-2"><strong>Company:</strong> Incline Corp</div>
-      <div class="mb-2"><strong>Route:</strong> Lagos-Ibadan</div>
+      <div class="mb-2"><strong>Alert:</strong> Fuel Warning</div>
       <div class="mb-2"><strong>Driver:</strong> John Doe</div>
+      <div class="mb-2"><strong>Route:</strong> Lagos - Abuja</div>
       <div class="mb-2"><strong>Status:</strong> <span class="badge bg-success">Delivered</span></div>
       <div class="text-end">
         <button class="btn btn-outline-primary btn-sm">View</button>
       </div>
     </div>
   </div>
-    
+  
   
 
 </main>

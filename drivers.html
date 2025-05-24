@@ -19,101 +19,95 @@
 
 <body>
     <!-- Header and navbar section -->
-    <header class="navbar  sticky-top  flex-md-nowrap p-0 shadow">
-        
-        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <header class="navbar sticky-top navbar-expand-lg navbar-light bg-white shadow-sm p-0">
+      <div class="container-fluid d-flex align-items-center">
+        <!-- Brand with logo -->
+        <a class="navbar-brand d-flex align-items-center text-dark me-3" href="#" id="logo" style="margin-bottom: 0;">
+          <img src="img/SPRINGFIELD LOGO 1.png" alt="" style="height: 30px; margin-right: 8px;">
+          Spring Tide
+        </a>
+    
+        <!-- Separator line -->
+        <div style="border-left: 1px solid #ccc; height: 24px; margin: 0 12px;"></div>
+    
+        <!-- Navbar toggler (sidebar toggle) -->
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu"
+          aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle sidebar"
+          style="border: 1px solid #ccc; background-color: white; color: black;">
           <span class="navbar-toggler-icon"></span>
         </button>
-        
-      </header>
-      
-      
+      </div>
+    </header>
     
-
-      <div class="container-fluid">
-        <div class="row">
-          <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
-            <div class="position-sticky pt-3">
-              <ul class="nav flex-column">
-              
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="index.html">
-                    <img src="img/Figr_Icon_window.png" alt="">
-                    
-                    Dashboard
-                  </a>
-                </li>
-                
-                <li class="nav-item">
-                  <a class="nav-link" href="python.html">
-                    <span data-feather="shopping-cart"></span>
-                    <img src="img/shipments.png" alt="">
-                    Shipments
-                    
-                  </a>
-                </li>
-                
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    <span data-feather="users"></span>
-                    Drivers
-                    
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="deployment.html">
-                    <span data-feather="bar-chart-2"></span>
-                    Deployment on Render
-                    
-                    
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    <span data-feather="layers"></span>
-                    Invoicing
-                  </a>
-                </li>
-              </ul>
-      
-              
-              <ul class="nav flex-column mb-2">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    <span data-feather="file-text"></span>
-                    Communication
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    <span data-feather="file-text"></span>
-                        Alerts
+    <!-- Sidebar -->
+    <div class="container-fluid">
+      <div class="row">
+        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+          <div class="position-sticky pt-3">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">
+                  <img src="img/Figr_Icon_window.png" alt="" style="width: 20px; margin-right: 8px;">
+                  Dashboard
                 </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    <span data-feather="file-text"></span>
-                    Reports
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    <span data-feather="file-text"></span>
-                    User Managements
-                  </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                      <span data-feather="file-text"></span>
-                      Settings
-                    </a>
-                  </li>
-                  
-              </ul>
-            </div>
-          </nav>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="python.html">
+                  <img src="img/shipments.png" alt="" style="width: 20px; margin-right: 8px;">
+                  Shipments
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <img src="img/icon-park-outline_truck.png" alt="" style="width: 20px; margin-right: 8px;">
+                  Drivers
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <img src="img/basil_invoice-outline.png" alt="" style="width: 20px; margin-right: 8px;">
+                  Invoicing
+                </a>
+              </li>
+            </ul>
+    
+            <ul class="nav flex-column mb-2">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <img src="img/icon-park-outline_communication.png" alt="" style="width: 20px; margin-right: 8px;">
+                  Communication
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <img src="img/mingcute_notification-line.png" alt="" style="width: 20px; margin-right: 8px;">
+                  Alerts
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <img src="img/iconoir_reports.png" alt="" style="width: 20px; margin-right: 8px;">
+                  Reports
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <img src="img/flowbite_users-outline.png" alt="" style="width: 20px; margin-right: 8px;">
+                  User Management
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <img src="img/Figr_Icon_settings.png" alt="" style="width: 20px; margin-right: 8px;">
+                  Settings
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </div>
+ 
 <!-- Ends Here -->
 
 
@@ -134,8 +128,13 @@
   
       <div class="d-flex align-items-center">
         <span class="me-3">Admin User</span>
-        <img src="img/icon1.png" alt="Image 1" style="height: 30px; width: 30px;" class="me-2">
-        <img src="img/icon2.png" alt="Image 2" style="height: 30px; width: 30px;">
+        <!-- First Image -->
+      <img src="img/notifications.png" alt="Image 2" style="height: 30px; width: 30px;">
+      
+      <!-- Second Image -->
+      
+      <img src="img/Frame 245.png" alt="Image 1" style="height: 30px; width: 30px;" class="me-2">
+      
       </div>
     </div>
   
@@ -164,6 +163,7 @@
       <button class="btn btn-outline-primary btn-sm">Map View</button>
       <button class="btn btn-outline-dark btn-sm">List View</button>
     </div>
+    
   </div>
   
       
