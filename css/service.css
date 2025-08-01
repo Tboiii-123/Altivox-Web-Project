@@ -61,75 +61,71 @@ body{
 }
 
 
-/* Section1 */
-
-.section1{
-    
-    background-image: url('/img/truck.png');
+.section1 {
+    background-image: url('/img/truck.webp');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     height: 750px;
-}
 
-.section1 div{
-    position: absolute;
+    /* Flexbox for centering */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    top: 40%;
-    left: 35%;
-    width: 35%;
 
-    
     color: white;
-    opacity: 1;
+    padding: 0 10%;
+}
+
+.section1 div {
+    max-width: 800px; /* prevents text from stretching too wide */
+    width: 100%;
+    word-wrap: break-word;
+    transition-delay: 800ms;
     
 }
 
-.section1 div h1{
+.section1 h1 {
     font-size: 40px;
     padding-bottom: 20px;
+    line-height: 1.3;
 }
 
-.section1 div p{
+.section1 p {
     font-size: 23px;
+    line-height: 1.5;
 }
 
-@media(max-width:800px){
-       
-    .section1 div{
-        position: absolute;
-        text-align: center;
-        top: 20%;
-        left: 20%;
-        width: 50%;
-    
-        
-        
-        
+/* Responsive adjustments */
+@media (max-width: 800px) {
+    .section1 {
+        height: 600px;
+        padding: 0 8%;
     }
- 
+
+    .section1 h1 {
+        font-size: 32px;
+    }
+
+    .section1 p {
+        font-size: 20px;
+    }
 }
 
-@media(max-width:600px){
-    .section1{
-    
-        background-image: url('/img/truck.png');
-        background-size: cover;
-        background-repeat: no-repeat;
+@media (max-width: 600px) {
+    .section1 {
         height: 500px;
+        padding: 0 5%;
     }
-    
-    .section1 div{
-        position: absolute;
-        text-align: center;
-        top: 20%;
-        left: 3%;
-        width: 100%;
-    
-        
-        
-        
+
+    .section1 h1 {
+        font-size: 28px;
     }
-    
+
+    .section1 p {
+        font-size: 18px;
+    }
 }
 
 /* Ends Here */
@@ -191,6 +187,10 @@ color: rgb(61, 61, 98);
     
 }
 
+.section3 aside .inner p{
+    text-align: center;
+   
+}
 .section3 .inner{
     
     
@@ -207,6 +207,18 @@ color: rgb(61, 61, 98);
     background-color: white;
     
 }
+.section3 .inner:nth-child(2){
+    transition-delay: 300ms;
+    
+    
+}
+
+.section3 .inner:nth-child(3){
+    transition-delay: 600ms;
+    
+}
+
+
 
 .section3 .inner img{
     padding-top: 20px;
@@ -281,12 +293,14 @@ color: rgb(61, 61, 98);
     font-weight: bold;
 }
 
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .section4 {
         flex-direction: column;
         align-items: center;
         text-align: left;
+        margin-left: 4%;
     }
 
     .steps {
@@ -302,6 +316,7 @@ color: rgb(61, 61, 98);
         width: 100%;
         
     }
+    
     
 }
 
@@ -321,6 +336,10 @@ color: rgb(61, 61, 98);
 .section5 a{
     margin-top: 30px;
 }
+.section5 a:hover{
+    font-size: 30px;
+}
+
 /* Ends Here */
 
 
@@ -388,3 +407,73 @@ color: rgb(61, 61, 98);
         text-align: left; /* Ensuring it remains left-aligned on mobile */
     }
 }
+
+
+/* Animation */
+
+
+.hid{
+    
+    opacity: 0;
+        
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+        
+ }
+    
+
+.hidden{
+    opacity: 0;
+    
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 2s;
+            
+            
+}
+
+.show{
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+            
+}
+
+
+@media(max-width:700px){
+    
+    
+    .hidden{
+    
+        opacity: none;
+        
+        filter: none;
+        transform:none;
+        transition: none;
+                       
+    }
+    .show{
+    
+            
+        opacity: none;
+        
+        filter: none;
+                transform:none;
+                
+    }
+    
+    .hid{
+    
+        opacity: none;
+        
+        filter: none;
+                transform:none;
+                transition: none;
+    
+        
+    }
+    
+    }
+    
+    

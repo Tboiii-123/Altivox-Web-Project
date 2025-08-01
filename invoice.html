@@ -124,23 +124,18 @@
     <div class="d-flex justify-content-between align-items-center">
       <!-- Heading on the left -->
       <div>
-        <h5 class="mb-1">Dashboard</h5>
-        <p class="mb-0">View all recent automation events and log</p>
+        <h5 class="mb-1">Invoicing & Financing</h5>
+        
       </div>
       
   
-      <!-- Buttons on the right -->
-      <div class="d-flex gap-2">
         
-        <button class="btn btn-white btn-sm d-block d-md-inline border">         
-          Assign Driver
-        </button>
         <button class="btn btn-success btn-sm d-block d-md-inline">
             <i class="bi bi-plus me-2"></i>
-            Create Workflow
+            Generate Invoice
           </button>
           
-      </div>
+      
     </div>
   </div>
     
@@ -150,29 +145,9 @@
       <!-- Card 1 -->
       <div class="col-12 col-md-4">
         <div class="card shadow-sm p-3 h-100">
-          <h5 class="card-title mb-3">Shipment Summary</h5>
-          <div class="d-flex justify-content-between text-center">
-            <div>
-              <div class="fw-bold">Pickup</div>
-              <div class="text-muted" id="text">120</div>
-            </div>
-            <div>
-              <div class="fw-bold">In Transit</div>
-              <div class="text-muted" id="text">244</div>
-            </div>
-          </div>
+          <h5 class="card-title mb-3">Total revenue</h5>
           
-          
-          <div class="d-flex justify-content-between text-center">
-            <div>
-              <div class="fw-bold">Delivered</div>
-              <div class="text-muted" id="text">300</div>
-            </div>
-            <div>
-              <div class="fw-bold">Delayed</div>
-              <div class="text-danger " id="text">15</div>
-            </div>
-          </div>
+          <h3>#15,000,000</h3>
           
         </div>
       </div>
@@ -180,19 +155,10 @@
       <!-- Card 2 -->
       <div class="col-12 col-md-4">
         <div class="card shadow-sm p-3 h-100">
-          <h5 class="card-title mb-3">Driver Staus Summary</h5>
-          <div class="d-flex justify-content-between text-center">
-            <div>
-              <div class="fw-bold">Activite Drivers</div>
-              <div class="text-muted" id="text">35</div>
-            </div>
-            <div>
-              <div class="fw-bold">Idel Drivers</div>
-              <div class="text-muted" id="text">10</div>
-            </div>
-          </div>
+          <h5 class="card-title mb-3">Total revenue</h5>
           
-       
+          <h3>#15,000,000</h3>
+          
         </div>
       </div>
   
@@ -200,37 +166,37 @@
       <!-- Card 3 -->
       <div class="col-12 col-md-4">
         <div class="card shadow-sm p-3 h-100">
-          <h5 class="card-title mb-3">Revenue Summary</h5>
-          <div class="d-flex justify-content-between text-center">
-            <div>
-              <div class="fw-bold">Total Revenue</div>
-              <div class="text-muted" id="text">#42,500,00</div>
-            </div>
-            <div>
-              <div class="fw-bold">Outstanding Invvoices</div>
-              <div class="text-danger" id="text">#5,400,00</div>
-            </div>
-          </div>
+          <h5 class="card-title mb-3">Total revenue</h5>
           
-        
+          <h3>#15,000,000</h3>
           
         </div>
       </div>
+
+
   
     </div>
   </div>
   
 
   
-
+ 
 
   <div class="container my-4">
+          <!-- Inline Text Navigation Above Table -->
+          <div class="d-flex justify-content-start gap-4 mb-3 px-2">
+            <a href="#" class="text-decoration-none text-dark" id="navigation">Invoice Geneartor</a>
+            <a href="#" class="text-decoration-none text-dark" id="navigation">Payment Tracking</a>
+            <a href="#" class="text-decoration-none text-dark" id="navigation">Reports & Analytics</a>
+          </div>
+          
+    
     <div class="row g-3">
       <!-- Left Column: Table Card -->
-      <div class="col-12 col-md-8">
+      <div class="col-12 ">
         <div class="card border rounded p-3">
           <!-- Header Section -->
-          <div class="d-flex justify-content-between align-items-center flex-wrap mb-5">
+          <div class="d-flex justify-content-between align-items-center flex-wrap mb-2">
             <div>
               <h5 class="mb-1">Recent Shipments</h5>
             </div>
@@ -250,30 +216,33 @@
                 <tr>
                   <th scope="col">ID</th>
                   <th scope="col">Customer</th>
-                  <th scope="col">Route</th>
-                  <th scope="col">Driver</th>
+                  <th scope="col">Amount</th>
+                  <th scope="col">Issue Date</th>
+                  <th scope="col">Due Date</th>
+                  
                   <th scope="col">Status</th>
+                  <th scope="col">Actions</th>
+              
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>ST-8742</td>
+                  <td>Inv-001</td>
                   <td>incline Corp</td>
                   
-                  <td>Lagos-Ibadan</td>
-                  <td>John Doe</td>
+                  <td>#60,000</td>
+                  <td>20205-4-02</td>
+                  <td>20205-4-02</td>
+                  
                   <td><span class="badge bg-danger">Delayed</span></td>
+                  <td>
+                    <i class="bi bi-three-dots-vertical"></i>
+    
+                  </td>
+                  
                   
                 </tr>
-                <tr>
-                    <td>ST-8742</td>
-                    <td>incline Corp</td>
-                    
-                    <td>Lagos-Ibadan</td>
-                    <td>John Doe</td>
-                    <td><span class="badge bg-warning">Transit</span></td>
-                    
-                </tr>
+               
                 <tr>
                     <td>ST-8742</td>
                     <td>incline Corp</td>
@@ -289,32 +258,6 @@
         </div>
       </div>
   
-      <!-- Right Column: Vertical Card with 3 Items -->
-      <div class="col-12 col-md-4">
-        <div class="card shadow-sm border rounded p-3 h-100">
-          <div class="mb-3">
-            <strong>Recent Alert</strong>
-          </div>
-  
-          <!-- Item 1 -->
-          <div class="border p-2 rounded mb-2">
-            <div class="fw-bold">Shipmnet #ST-8742 is delayed</div>
-            <div class="text-muted">Expected delivery time is now 2 hours later than scheduleed</div>
-          </div>
-  
-          <!-- Item 2 -->
-          <div class="border p-2 rounded mb-2">
-            <div class="fw-bold">Driver John D. reported vehicle issue</div>
-            <div class="text-muted">Maintainance team has been notofied</div>
-          </div>
-  
-          <!-- Item 3 -->
-          <div class="border p-2 rounded">
-            <div class="fw-bold">New customer onboard</div>
-            <div class="text-muted">Incline Corp ha been successfully added to the system</div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
   <!-- Mobile Card View -->

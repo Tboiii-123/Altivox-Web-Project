@@ -41,6 +41,7 @@ ul li{
 
 
 
+
 @media(max-width:1000px){
     nav div ul li button{
         width: 100%;
@@ -64,65 +65,51 @@ ul li{
 
 /* Section1 */
 
-.section1{
-    
-    background-image: url('/img/Pensive.png');
+.section1 {
+    background-image: url('/img/Pensive.webp');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     height: 750px;
-}
 
-
-.section1 div{
-    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    top: 40%;
-    left: 25%;
-    
+
     color: white;
-    width: 50%;
-
-    
-    
+    padding: 0 10%;
 }
 
+.section1 div {
+    max-width: 800px;
+    width: 100%;
+}
 
-.section1 div h1{
+.section1 h1 {
     font-size: 50px;
+    margin-bottom: 20px;
 }
 
-.section1 div  p{
+.section1 p {
     font-size: 30px;
-    text-align: center;
-    
+    line-height: 1.5;
 }
 
-@media(max-width:600px){
-    .section1{
-    
-        
+/* Responsive */
+@media (max-width: 600px) {
+    .section1 {
         height: 500px;
+        padding: 0 5%;
     }
-    
-    .section1 div{
-        position: absolute;
-        text-align: center;
-        top: 40%;
-        left: 10%;
-        
-        color: white;
-        width: 90%;
-    
-        
-    }
-    .section1 div h1{
+
+    .section1 h1 {
         font-size: 30px;
     }
-    .section1 div  p{
+
+    .section1 p {
         font-size: 20px;
     }
-    
-    
 }
 
 
@@ -160,6 +147,9 @@ color: rgb(61, 61, 98);
     display: block;
 margin-left: 0px;
 
+}
+.text {
+    font-size: 17px;
 }
 
 @media(max-width:1000px){
@@ -242,6 +232,16 @@ width: 100%;
     margin-bottom: 50px;
 }
 
+.section4 .container .hid:nth-child(2){
+    transition-delay: 300ms;
+    
+}
+
+.section4 .container .hid:nth-child(3){
+    transition-delay: 600ms;
+    
+}
+
 
 /* Ends Here */
 
@@ -268,6 +268,9 @@ width: 100%;
 margin-bottom: 30px;
 }
 
+.section5 a:hover{
+    font-size: 30px;
+}
 /* Ends Here */
 
 
@@ -337,3 +340,75 @@ margin-bottom: 30px;
         text-align: left; /* Ensuring it remains left-aligned on mobile */
     }
 }
+
+
+
+/* Animation */
+
+
+.hid{
+    
+    opacity: 0;
+        
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+        
+ }
+    
+
+.hidden{
+    opacity: 0;
+    
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 2s;
+            
+            
+}
+
+.show{
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+            
+}
+
+
+@media(max-width:700px){
+    
+    
+    .hidden{
+    
+        opacity: none;
+        
+        filter: none;
+        transform:none;
+        transition: none;
+                       
+    }
+    .show{
+    
+            
+        opacity: none;
+        
+        filter: none;
+                transform:none;
+                
+    }
+    
+    .hid{
+    
+        opacity: none;
+        
+        filter: none;
+                transform:none;
+                transition: none;
+    
+        
+    }
+    
+    }
+    
+    
+    

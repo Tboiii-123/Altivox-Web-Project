@@ -58,64 +58,56 @@ ul li{
     
 }
 
-/* Section1 */
-
-.section1{
-
-    background-image: url('/img/main.png');
+.section1 {
+    background-image: url('/img/main.webp');
     background-size: cover;
+
     background-repeat: no-repeat;
+    background-position: center;
+    
     height: 750px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.section1 div{
-    position: absolute;
-    text-align: center;
-    top: 40%;
-    left: 30%;
-    
+.section1 div {
     color: white;
     opacity: 1;
+    transition-delay: 800ms;
+
+    
+}
+.section1 div a:hover{
+    font-size: 30px;
     
 }
 
-
-.section1 div h1{
+.section1 div h1 {
     font-size: 50px;
 }
 
-.section1 div  p{
+.section1 div p {
     font-size: 30px;
 }
 
-@media(max-width:600px){
-    .section1{
-
-        
-        height: 500px;
+@media (max-width: 600px) {
+    .section1 {
+        height: 600px; 
+        background-size: cover;
+        background-position: center;
+        padding: 20px 10px;
     }
-    
-    .section1 div{
-        position: absolute;
-        text-align: center;
-        top: 30%;
-        left: 15%;
-        
-        color: white;
-        opacity: 1;
-        
-    }
-    .section1 div h1{
+    .section1 div h1 {
         font-size: 30px;
     }
-    .section1 div  p{
+
+    .section1 div p {
         font-size: 20px;
     }
-    
-    
 }
-
-
 /* Ends Here */
 
 
@@ -136,6 +128,14 @@ ul li{
     margin-top: 50px;
     text-align: center;
 }
+
+
+.section2 #button :hover{
+    font-size: 30px;
+
+}
+    
+
 .section2 .container .card-body #header{
     font-size: 30px;
     font-weight: bolder;
@@ -146,34 +146,6 @@ ul li{
 
 /* Section3 */
 
-.section3{
-    margin-top: 100px;
-    text-align: center;
-}
-.section3 aside {
-    display: flex;
-    justify-content: center;
-
-}
-
-.section3 aside div{
-    padding-left: 1px;
-}
-
-
-@media(max-width:800px){
-    .section3 aside div{
-        padding-left: 10px;
-    }
-    .section3 aside div p img{
-        width: 40%;
-    }
-    .section3 aside div p {
-        font-size: 10px;
-    }
-    
-       
-}
 
 
 /* Ends Here */
@@ -208,47 +180,75 @@ ul li{
 .section4 .inner{
     
     
+    
     margin-left: 3%;
     
     
-    padding: 10px 22px;
+    padding: 10px 32px;
     box-shadow:1px 1px 5px black;
 
     
     height: 280px;   
-    border-radius: 20px;      
+    border-radius: 20px;
+}
+.section4 .inner :nth-child(2){
+    transition-delay: 300ms;
+
+}
+.section4 .inner:nth-child(3){
+    transition-delay: 700ms;
+    
+}
+.section4 .inner:nth-child(4){
+    transition-delay: 900ms;
+    
 }
 
-
-.section4 .inner .display{
+.section4 .inner .display {
     margin-top: 50px;
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px; /* Adjust gap to control space between image and text */
 }
+
 
 @media(max-width:1000px){
     
-.section4 .inner{
+    
+    .section4 .inner p{
+        font-size: 18px;
+        padding-top: 5px;
+        text-align: start;
+    }
+    
+     
+    .section4 .inner{
+        margin-top: 50px;
+        
+        padding: 10px 18px;
+        
+        box-shadow:1px 1px 30px black;
+        width: 90%;
+        margin-left: 5%;
+        height: 350px;
+                
+    }
+    
+    .section4{
+        display:block;
+        
+    }   
+    .section4 aside{
+    
+        display: block;
+        
+        
+    }
+   
     
     
-    margin-left: 3%;
+    }
     
-    
-    padding: 10px 22px;
-    box-shadow:1px 1px 5px black;
-
-    
-    height: 440px;   
-    border-radius: 20px;      
-}
-
-
-
-}
-
-
-/* Ends Here */
-
 
 
 @media(max-width:700px){
@@ -262,25 +262,30 @@ ul li{
         
         
     }
+    .section4 .inner p{
+        font-size: 18px;
+        padding-top: 5px;
+        text-align: start;
+    }
+    
      
     .section4 .inner{
         margin-top: 50px;
         
-        padding: 10px 22px;
+        padding: 10px 18px;
+        
         box-shadow:1px 1px 30px black;
         width: 90%;
         margin-left: 5%;
-        height: 300px;
+        height: 350px;
                 
     }
-    .section4 .inner p{
-        font-size: 14px;
-        padding-top: 5px;
-    }
+
     
     
 
 }
+
 
 /* Ends Here */
 
@@ -299,8 +304,12 @@ ul li{
     margin-bottom: 20px;
 }
 
+.section5 a:hover{
+    font-size: 30px;
+}
 
 /* Ends Here */
+
 
 
 
@@ -329,7 +338,6 @@ ul li{
 .footer-list .nav-item {
     padding: 5px 0;
     font-size: 17px;
-    
     
 }
 
@@ -371,3 +379,5 @@ ul li{
         text-align: left; /* Ensuring it remains left-aligned on mobile */
     }
 }
+
+
